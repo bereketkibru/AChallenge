@@ -126,6 +126,17 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    pip install requirements.txt
    ```
+4. run the flask api
+   ```sh
+   export FLASK_API=api
+   export FLASK_DEBUG=1
+   flask run
+   ```
+4. run the react up
+   ```sh
+   cd react-fed
+   npm start
+   ```
 NOTE if the Docker issue is solved you can jsut write docker compose up and that will be all after cloning the repo
 
 <!-- USAGE EXAMPLES -->
