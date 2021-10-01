@@ -10,7 +10,6 @@ main =Blueprint('main',__name__)
 @main.route('/view',methods=['POST'])
 def post_index():
     campaingnId=request.json
-    print(campaingnId['campId'])
     extract=Extract()
     df=extract.extract_data(campaingnId['campId'])
     return df,201
@@ -38,14 +37,14 @@ class Extract:
         return(resultJSON)
     def extract_data(self,Campaing_id):
         Ilog_df = self.read_proccessed_data()
-        print('load the data')
         campaign1 = Ilog_df[Ilog_df['CampaignId'] == Campaing_id]
         df1=campaign1.groupby('Site').agg({'Unnamed: 0': 'count', 'engagement': 'sum'})
         df1.reset_index(inplace=True)
         df1['engRate']=df1['engagement']/df1['Unnamed: 0'] 
         df1.sort_values(by='engRate', ascending=False, inplace=True,ignore_index=True)
         df1.rename(columns={'Unnamed: 0':'Impression'},index={'ONE':'Row_1'},inplace=True)
-        df1.index+=1
-        result=self.convertToJSON(df1)
-        print(result)
+        df1['Rank']=df1.index
+        df1.Rank+=1
+        df2=df1[['Rank','Site','Impression','engagement','engRate']]
+        result=self.convertToJSON(df2)
         return result
