@@ -33,22 +33,22 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="image/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">project_title</h3>
+  <h3 align="center">Adludio Data Science Challenge</h3>
 
   <p align="center">
-    project_description
+    AD CAMPAIGN SITE SCORING AND RANKING
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/bereketkibru/AChallenge"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/bereketkibru/AChallenge">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/bereketkibru/AChallenge/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/bereketkibru/AChallenge/issues">Request Feature</a>
   </p>
 </p>
 
@@ -87,16 +87,14 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+The task that has been assigned was to come up with a scoring algorithm for sites that has been used in a campaign and using those scoring results for future campaign with best performing sits. 
 
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [React]()
+* [Flask api]()
+* [Semanitcs UI]()
 
 
 
@@ -121,17 +119,19 @@ This is an example of how to list things you need to use the software and how to
    ```
 2. Install NPM packages
    ```sh
+   cd react-fend
    npm install
    ```
-
-
+3. Install pip packages
+   ```sh
+   pip install requirements.txt
+   ```
+NOTE if the Docker issue is solved you can jsut write docker compose up and that will be all after cloning the repo
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+After the react app is instantiated you will give a campaign id and it will return the first top 20 ranked sites.
 
 
 
@@ -165,18 +165,18 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Bereket Kibru - [email](bekakibru2@gmail.com ) 
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/bereketkibru/AChallenge](https://github.com/bereketkibru/AChallenge)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* [Audldio]()
+* [10 Academy]()
+
 
 
 
