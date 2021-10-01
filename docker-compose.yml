@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  server:
+    build: ./api
+    ports:
+      - "8000:8000"
+  web:
+    build: ./react-fend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
