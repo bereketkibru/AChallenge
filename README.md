@@ -185,8 +185,8 @@ Project Link: [https://github.com/bereketkibru/AChallenge](https://github.com/be
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [Audldio]()
-* [10 Academy]()
+* [Audldio](https://www.adludio.com/)
+* [10 Academy](https://www.10academy.org/)
 
 
 
@@ -206,5 +206,5 @@ Project Link: [https://github.com/bereketkibru/AChallenge](https://github.com/be
 [license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
 [license-url]: https://github.com/bereketkibru/AChallenge/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+[linkedin-url]: https://linkedin.com/in/bereket-kibru-b25234137
 [product-screenshot]: Capture.PNG
