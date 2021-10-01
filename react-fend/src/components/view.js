@@ -31,8 +31,8 @@ export  const View=()=>{
     setDataPage(_(camp_x).slice(0).take(pageSize).value())
   }
   const endPage=()=>{
-    setcurrentPage(pages[-1]);
-    const startIndex=(pages[-1]-1)*pageSize;
+    setcurrentPage(pageCount);
+    const startIndex=(pageCount-1)*pageSize;
     const paginationPost=_(camp_x).slice(startIndex).take(pageSize).value();
     setDataPage(paginationPost)
   }
@@ -62,19 +62,21 @@ export  const View=()=>{
   <br/>
   <Header as='h2' style={{float:'center'}}>
     
-    <Header.Content>AD Campaing Site Performance Scoring and Ranking Algorithm</Header.Content>
-    <h4>Score and rank the perfomance of a site on a single campaing by accepting  the capmain Id</h4>
+    <Header.Content>AD Campaign Site Performance Scoring and Ranking Algorithm</Header.Content>
+    <h4>Score and rank the perfomance of a site on a single campaign by accepting  the capmaign Id</h4>
   </Header>
-  
+  <div style={{margin: '50px'}} >
       <div style={{float: 'left',width: '50%'}}>
       <Form size='big' style={{float: 'left',width: '50%'}}>
           <Form.Field>
-              <label style={{float: 'left',width: '30%'}}>Campaing ID</label>
+              <label >Campaign ID</label>
               <input onChange={(value) => setCampID(value.target.value)} placeholder='CampaingId' />
           </Form.Field>
           <Button style={{float: 'left',width: '30%'}} onClick={fetch_data} type='submit'>Submit</Button>
       </Form>
       </div>
+
+      
     <Table celled>
     <Table.Header>
       <Table.Row>
@@ -83,6 +85,7 @@ export  const View=()=>{
         <Table.HeaderCell>Impression</Table.HeaderCell>
         <Table.HeaderCell>Engagement</Table.HeaderCell>
         <Table.HeaderCell>Engagement Rate</Table.HeaderCell>
+        <Table.HeaderCell>Score</Table.HeaderCell>
       </Table.Row>
     </Table.Header>
     <Table.Body>
@@ -94,6 +97,7 @@ export  const View=()=>{
                     <Table.Cell >{camp.Impression}</Table.Cell>
                     <Table.Cell>{camp.engagement}</Table.Cell>
                     <Table.Cell>{camp.engRate}</Table.Cell>
+                    <Table.Cell>{camp.Score}</Table.Cell>
                 </Table.Row>
             )
         })}
@@ -125,6 +129,7 @@ export  const View=()=>{
       </Table.Row>
     </Table.Footer>
     </Table>
+    </div>
     </div>
     )
 }
