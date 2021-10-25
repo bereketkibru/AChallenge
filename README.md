@@ -137,7 +137,6 @@ This is an example of how to list things you need to use the software and how to
    cd react-fed
    npm start
    ```
-NOTE if the Docker issue is solved you can jsut write docker compose up and that will be all after cloning the repo
 
 <!-- USAGE EXAMPLES -->
 ## Usage
